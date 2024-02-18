@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelas PPLG</title>
+    
+    <!-- Use the link below to add a favicon -->
+    <link rel="icon" href="path/to/your/favicon.ico" type="image/x-icon">
+    <!-- Use the link below to add a favicon in iOS devices -->
+    <link rel="apple-touch-icon" href="path/to/your/favicon.ico">
+</head>
+
+<!-- Start Style CSS -->
+
+    <!-- Google Font API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+    <!-- CSS Custom -->
+    <link rel="stylesheet" href="/style.css">
+
+<!-- End Style CSS -->
+<body>
+
+<!-- START::Navbar-Section -->
+<nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+  <div class="container my-3">
+    <a class="navbar-brand" href="#">
+        <img src="/assets/logo.png" alt="Logo" width="168" height="48" class="d-inline-block align-text-top">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse h4" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item ml-8">
+          <a class="nav-link active" href="#home">Beranda</a>
+        </li>
+        <li class="nav-item ml-8">
+          <a class="nav-link" href="#about">Visi Misi</a>
+        </li>
+        <li class="nav-item ml-8">
+          <a class="nav-link" href="#family">Keluarga</a>
+        </li>
+        <li class="nav-item ml-8">
+          <a class="nav-link" href="#gallery">Galeri</a>
+        </li>
+        <li class="nav-item ml-8">
+          <a class="nav-link" href="#curriculum">Kurikulum</a>
+        </li>
+      </ul>
+      <a href="https://www.instagram.com/pplgkiyowo/" class="btn btn-primary ml-8" target="_blank">Instagram Kami 📷</a>
+    </div>
+  </div>
+</nav>
+<!-- END::Navbar-Section -->
+
+<!-- START::Hero-Section -->
+<section style="margin-top: 100px; position: relative;">
+  <video autoplay loop muted style="height: 90vh; width: 100%; object-fit: cover;">
+    <source src="/hero-section.mp4" type="video/mp4">
+  </video>
+  <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center;">
+    <h1 style="color: white; font-size: 3em; margin-bottom: 10px;">XII PPLG</h1>
+    <a href="#home" class="btn btn-secondary">Jelajahi Kelas</a>
+  </div>
+</section>
+
+<!-- END::Hero-Section -->
+
+<!-- START::Wali-Section -->
+<section id="home" class="pt-80 container">
+    <div class="row gy-5">
+        <div class="col-12 d-sm-block d-md-none">
+            <img src="/assets/illustration_final.png" alt="illustration_final" class="img-fluid">
+        </div>
+        <div class="col-12 col-md-7 d-flex align-items-center">
+            <div class="wrap">
+                <div class="mb-16 badge">
+                    🎉 Kelas Sipaling Berprestasi 🔥
+                </div>
+                <h1 class="mb-16 h1">
+                    Selamat datang di website kami
+                </h1>
+                <p class="mb-16 h5">
+                    Kami dengan bangga mempersembahkan kepada Anda Kelas Rekayasa Perangkat Lunak (RPL) di SMK Negeri 6 Balikpapan! Sebagai wali kelas, kami berkomitmen untuk memberi pengalaman pembelajaran yang bermakna dan mendukung perkembangan anak Anda dalam bidang teknologi dan informatika.
+                </p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Lihat Viceo Sambutan 🎥</button>
+            </div>
+        </div>
+        <div class="col-5 d-md-block d-none">
+            <img src="/assets/illustration_final.png" alt="illustration_final" class="img-fluid">
+        </div>
+    </div>
+</section>
+<!-- END::Wali-Section -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <iframe style="width: 100%; height: 100%;" id="youtubeVideo" src="https://www.youtube.com/embed/J6s16ljXax0" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- START::About-Section -->
+<section id="about" class="pt-80 container">
+    <div class="about">
+        <div class="row d-flex align-items-center">
+            <div class="col-12 col-md-6">
+                <div class="badge mb-48" style="color: #1e1e1e; font-size: 16px; font-weight: 500;">
+                    <div class="d-flex align-items-center">
+                        <img src="/assets/global.png" alt="global" style="height: 24px; width: 24px; margin-right: 8px;">
+                        Siswa yang paling kompeten
+                    </div>
+                </div>
+                <div class="copy mb-48">
+                    <h2 class="h1" style="color: white;">
+                        Kreatif & Inovatif
+                    </h2>
+                    <p class="mb-16 h5" style="color: white;">
+                        Kami memiliki ambisi dan pandangan yang sangat jauh ke depan untuk memajukan anak muda indonesia.
+                    </p>
+                </div>
+                <div class="d-none d-md-block">
+                    <a href="#gallery" class="btn btn-secondary">
+                        Lihat gallery 📷
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="row g-3">
+                    <div class="col-6">
+                        <img src="/assets/vision/card.png" alt="visi-1" class="img-fluid">
+                    </div>
+                    <div class="col-6">
+                        <img src="/assets/vision/card-4.png" alt="visi-1" class="img-fluid">
+                    </div>
+                    <div class="col-6">
+                        <img src="/assets/vision/card-2.png" alt="visi-1" class="img-fluid">
+                    </div>
+                    <div class="col-6">
+                        <img src="/assets/vision/card-1.png" alt="visi-1" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>   
+        <a href="#gallery" class="btn btn-secondary d-md-none d-grid d-md-block mt-48">
+            Lihat gallery 📷
+        </a>
+    </div>
+</section>
+<!-- END::About-Section -->
+
+<!-- START::Family-section -->
+<section class="pt-80 container" id="family">
+    <h1 class="h2 mb-48 text-center">
+        Keluarga Besar XII PPLG
+    </h1>
+    <div class="row gy-5">
+        <div class="col-6 col-md-3">
+            <div class="card">
+              <img src="/assets/photo/rizal.png" class="card-img-top" alt="rijal">
+              <div class="card-body text-center">
+                <h5 class="h4-blue">Muhammad Rizal</h5>
+                <p class="h5-blue">Ketua Kelas</p>
+              </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="card">
+              <img src="/assets/photo/bhisma.png" class="card-img-top" alt="rijal">
+              <div class="card-body text-center">
+                <h5 class="h4-blue">Bhisma Aprian Prayogi</h5>
+                <p class="h5-blue">Wakil Ketua Kelas</p>
+              </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="card">
+              <img src="/assets/photo/tirsa.png" class="card-img-top" alt="rijal">
+              <div class="card-body text-center">
+                <h5 class="h4-blue">Tirsa Septafia Gista</h5>
+                <p class="h5-blue">Bendahara Kelas</p>
+              </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="card">
+              <img src="/assets/photo/mei.png" class="card-img-top" alt="rijal">
+              <div class="card-body text-center">
+                <h5 class="h4-blue">Meiliana Dian Lisanti</h5>
+                <p class="h5-blue">Sekretaris Kelas</p>
+              </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="card">
+              <img src="/assets/photo/mosh.png" class="card-img-top" alt="rijal">
+              <div class="card-body text-center">
+                <h5 class="h4-blue">Akhmad Rizky Fadhilah</h5>
+                <p class="h5-blue">Anggota Kelas</p>
+              </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="card">
+              <img src="/assets/photo/abi.png" class="card-img-top" alt="rijal">
+              <div class="card-body text-center">
+                <h5 class="h4-blue">Baihaqi Abimanyu TP</h5>
+                <p class="h5-blue">Anggota Kelas</p>
+              </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="card">
+              <img src="/assets/photo/pais.png" class="card-img-top" alt="rijal">
+              <div class="card-body text-center">
+                <h5 class="h4-blue">Pais Haiki Alfaritz</h5>
+                <p class="h5-blue">Anggota Kelas</p>
+              </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="card">
+              <img src="/assets/photo/pik.png" class="card-img-top" alt="rijal">
+              <div class="card-body text-center">
+                <h5 class="h4-blue">Muhammad Fikri</h5>
+                <p class="h5-blue">Anggota Kelas</p>
+              </div>
+            </div>
+        </div>        
+        <div class="col-6 col-md-3">
+            <div class="card">
+              <img src="/assets/photo/yaka.png" class="card-img-top" alt="rijal">
+              <div class="card-body text-center">
+                <h5 class="h4-blue">Iyaka Samanda Caysar</h5>
+                <p class="h5-blue">Anggota Kelas</p>
+              </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="card">
+              <img src="/assets/photo/paras.png" class="card-img-top" alt="rijal">
+              <div class="card-body text-center">
+                <h5 class="h4-blue">Muhammad Farras Kanz</h5>
+                <p class="h5-blue">Anggota Kelas</p>
+              </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="card">
+              <img src="/assets/photo/tang.png" class="card-img-top" alt="rijal">
+              <div class="card-body text-center">
+                <h5 class="h4-blue">Muhammad Bintang Rizky</h5>
+                <p class="h5-blue">Anggota Kelas</p>
+              </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="card">
+              <img src="/assets/photo/gor.png" class="card-img-top" alt="rijal">
+              <div class="card-body text-center">
+                <h5 class="h4-blue">Rizky Abdullah Asri</h5>
+                <p class="h5-blue">Anggota Kelas</p>
+              </div>
+            </div>
+        </div>     
+    </div>
+</section>
+<!-- END::Family-section -->
+
+<!-- START::Gallery-Section -->
+<section id="gallery" class="container pt-80">
+    <h1 class="h2 mb-48 text-center">
+        Galeri Kami
+    </h1>
+    <div class="d-none d-sm-block">
+        <div class="row">
+            <div class="col-3">
+                <img src="/assets/gallery/gal-1.png" class="img-fluid" alt="gal-1">
+            </div>
+            <div class="col-9">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="/assets/gallery/gal-2.png" class="img-fluid" alt="gal-1">
+                    </div>
+                    <div class="col-8">
+                        <img src="/assets/gallery/gal-3.png" class="img-fluid" alt="gal-1">
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-8">
+                        <img src="/assets/gallery/gal-4.png" class="img-fluid" alt="gal-1">
+                    </div>
+                    <div class="col-4">
+                        <img src="/assets/gallery/gal-6.png" class="img-fluid" alt="gal-1">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-sm-none">
+        <div id="carouselExampleIndicators" class="carousel slide" style="border-radius: 24px;">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div style="border-radius: 48px; height: 600px; background: url('/assets/gallery/gal-1.png'); background-size: cover;" class="d-block w-100"></div>
+            </div>
+            <div class="carousel-item">
+              <div style="border-radius: 48px; height: 600px; background: url('/assets/gallery/gal-2.png'); background-size: cover;" class="d-block w-100"></div>
+            </div>
+            <div class="carousel-item">
+              <div style="border-radius: 48px; height: 600px; background: url('/assets/gallery/gal-3.png'); background-size: cover;" class="d-block w-100"></div>
+            </div>
+            <div class="carousel-item">
+              <div style="border-radius: 48px; height: 600px; background: url('/assets/gallery/gal-4.png'); background-size: cover;" class="d-block w-100"></div>
+            </div>
+            <div class="carousel-item">
+              <div style="border-radius: 48px; height: 600px; background: url('/assets/gallery/gal-5.png'); background-size: cover;" class="d-block w-100"></div>
+            </div>
+            <div class="carousel-item">
+              <div style="border-radius: 48px; height: 600px; background: url('/assets/gallery/gal-6.png'); background-size: cover;" class="d-block w-100"></div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+    </div>
+</section>
+<!-- END::Gallery-Section -->
+
+<!-- START::Curriculum-Section -->
+<section id="curriculum" class="container pt-80 pb-80">
+    <h1 class="h2 mb-48 text-center">
+        Teknologi & Mata Pelajaran Kami
+    </h1>
+    <div class="text-center mb-48 d-sm-none">
+        <img src="/assets/image/mitra/laravel.png" class="gambar-mitra-sm m-4" alt="bca">
+        <img src="/assets/image/mitra/bootstrap.png" class="gambar-mitra-sm m-4" alt="tokopedia">
+        <img src="/assets/image/mitra/tail.png" class="gambar-mitra-sm m-4" alt="blibli">
+        <img src="/assets/image/mitra/rectt.png" class="gambar-mitra-sm m-4" alt="1000-startup">
+        <img src="/assets/image/mitra/mysql.png" class="gambar-mitra-sm m-4" alt="pemkot-balikpapan">
+    </div>
+    <div class="d-none d-md-block">
+        <div class="d-flex justify-content-evenly align-items-center mb-48">
+            <img src="/assets/image/mitra/laravel.png" class="gambar-mitra" alt="bca">
+            <img src="/assets/image/mitra/bootstrap.png" class="gambar-mitra" alt="tokopedia">
+            <img src="/assets/image/mitra/tail.png" class="gambar-mitra" alt="blibli">
+            <img src="/assets/image/mitra/rectt.png" class="gambar-mitra" alt="1000-startup">
+            <img src="/assets/image/mitra/mysql.png" class="gambar-mitra" alt="pemkot-balikpapan">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="card mb-48">
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-striped-columns">
+                            <thead>
+                                <tr>
+                                    <th>Waktu</th>
+                                    <th>Senin</th>
+                                    <th>Selasa</th>
+                                    <th>Rabu</th>
+                                    <th>Kamis</th>
+                                    <th>Jumat</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>07.15 - 08.00</td>
+                                    <td></td>
+                                    <td><div class="badge bg-info" style="color: white;">Bahasa Inggris</div></td>
+                                    <td><div class="badge bg-primary" style="color: white;">Produktif RPL</div></td>
+                                    <td><div class="badge bg-primary" style="color: white;">Produktif RPL</div></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>08.00 - 08.45</td>
+                                    <td><div class="badge bg-black" style="color: white;"> PKK</div></td>
+                                    <td><div class="badge bg-info" style="color: white;">Bahasa Inggris</div></td>
+                                    <td><div class="badge bg-primary" style="color: white;">Produktif RPL</div></td>
+                                    <td><div class="badge bg-primary" style="color: white;">Produktif RPL</div></td>
+                                    <td><div class="badge bg-warning" style="color: white;">BK</div></td>
+                                </tr>
+                                <tr>
+                                    <td>08.00 - 08.45</td>
+                                    <td><div class="badge bg-black" style="color: white;"> PKK</div></td>
+                                    <td><div class="badge bg-info" style="color: white;">Bahasa Inggris</div></td>
+                                    <td><div class="badge bg-primary" style="color: white;">Produktif RPL</div></td>
+                                    <td><div class="badge bg-primary" style="color: white;">Produktif RPL</div></td>
+                                    <td><div class="badge bg-danger" style="color: white;">Matematika</div></td>
+                                </tr>
+                                <tr>
+                                    <td>08.45 - 09.30</td>
+                                    <td><div class="badge bg-black" style="color: white;"> PKK</div></td>
+                                    <td><div class="badge bg-info" style="color: white;">Bahasa Inggris</div></td>
+                                    <td><div class="badge bg-primary" style="color: white;">Produktif RPL</div></td>
+                                    <td><div class="badge bg-primary" style="color: white;">Produktif RPL</div></td>
+                                    <td><div class="badge bg-danger" style="color: white;">Matematika</div></td>
+                                </tr>
+                                <tr>
+                                    <td>09.30 - 10.15</td>
+                                    <td><div class="badge bg-black" style="color: white;"> PKK</div></td>
+                                    <td><div class="badge bg-info" style="color: white;">Bahasa Inggris</div></td>
+                                    <td><div class="badge bg-primary" style="color: white;">Produktif RPL</div></td>
+                                    <td><div class="badge bg-primary" style="color: white;">Produktif RPL</div></td>
+                                    <td><div class="badge bg-danger" style="color: white;">Matematika</div></td>
+                                </tr>      
+                                <tr>
+                                    <td>10.15 - 10.30</td>
+                                    <td colspan="5" class="text-center">Istirahat</td>
+                                </tr>   
+                                <tr>
+                                    <td>10.30 - 11.15</td>
+                                    <td><div class="badge bg-black" style="color: white;"> PKK</div></td>
+                                    <td><div class="badge bg-success" style="color: white;">PAI</div></td>
+                                    <td><div class="badge bg-primary" style="color: white;">Produktif RPL</div></td>
+                                    <td><div class="badge bg-primary" style="color: white;">Produktif RPL</div></td>
+                                    <td><div class="badge bg-danger" style="color: white;">Matematika</div></td>
+                                </tr>          
+                                <tr>
+                                    <td>11.15 - 12.00</td>
+                                    <td><div class="badge bg-black" style="color: white;"> PKK</div></td>
+                                    <td><div class="badge bg-success" style="color: white;">PAI</div></td>
+                                    <td><div class="badge bg-primary" style="color: white;">Produktif RPL</div></td>
+                                    <td><div class="badge bg-primary" style="color: white;">Produktif RPL</div></td>
+                                    <td></td>
+                                </tr>  
+                                <tr>
+                                    <td>12.00 - 12.45</td>
+                                    <td><div class="badge bg-primary" style="color: white;">Produktif RPL</div></td>
+                                    <td><div class="badge bg-success" style="color: white;">PAI</div></td>
+                                    <td><div class="badge bg-primary" style="color: white;">Produktif RPL</div></td>
+                                    <td><div class="badge bg-primary" style="color: white;">Produktif RPL</div></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>12.45 - 13.15</td>
+                                    <td colspan="5" class="text-center">Istirahat</td>
+                                </tr>
+                                <tr>
+                                    <td>13.15 - 14.00</td>
+                                    <td><div class="badge bg-primary" style="color: white;">Produktif RPL</div></td>
+                                    <td><div class="badge bg-secondary" style="color: white;">PPKN</div></td>
+                                    <td><div class="badge bg-primary" style="color: white;">Produktif RPL</div></td>
+                                    <td><div class="badge bg-primary" style="color: white;">Produktif RPL</div></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>14.00 - 14.45</td>
+                                    <td><div class="badge bg-primary" style="color: white;">Produktif RPL</div></td>
+                                    <td><div class="badge bg-secondary" style="color: white;">PPKN</div></td>
+                                    <td><div class="badge bg-primary" style="color: white;">Produktif RPL</div></td>
+                                    <td><div class="badge bg-primary" style="color: white;">Produktif RPL</div></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>14.45 - 15.30</td>
+                                    <td><div class="badge bg-primary" style="color: white;">Produktif RPL</div></td>
+                                    <td><div class="badge bg-secondary" style="color: white;">PPKN</div></td>
+                                    <td><div class="badge bg-primary" style="color: white;">Produktif RPL</div></td>
+                                    <td><div class="badge bg-primary" style="color: white;">Produktif RPL</div></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                <td>15.30 - 16.15</td>
+                                    <td><div class="badge bg-primary" style="color: white;">Produktif RPL</div></td>
+                                    <td><div class="badge bg-warning" style="color: white;">Bahasa Indonesia</div></td>
+                                    <td><div class="badge bg-primary" style="color: white;">Produktif RPL</div></td>
+                                    <td><div class="badge bg-primary" style="color: white;">Produktif RPL</div></td>
+                                    <td></td>
+                                </tr>  
+                                <tr>
+                                <td>16.15 - 17.00</td>
+                                    <td></td>
+                                    <td><div class="badge bg-warning" style="color: white;">Bahasa Indonesia</div></td>
+                                    <td></td>
+                                    <td><div class="badge bg-primary" style="color: white;">Produktif RPL</div></td>
+                                    <td></td>
+                                </tr>                                                                    
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- EnD::Curriculum-Section -->
+
+<!-- START::Footer-Section -->
+<section class="container-fluid text-center pt-48 pb-48" style="background: #080C2E;">
+  <img src="/assets/logo-light.png" class="" style="max-width: 300px;" alt="">
+  <div class="d-flex align-items-center justify-content-center">
+    <img src="/assets/instagram.png" alt="instagram" style="width: 24px;">
+    <p class="h4 ml-8" style="color: white;">pplg_smkn6bpn</p>
+  </div>
+</section>
+<!-- END::Footer-Section -->
+
+<!-- Start JS -->
+
+<!-- JQUERY CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Custom JS -->
+<script src="/index.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+<!-- End JS -->
+</body>
+</html>
