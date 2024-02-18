@@ -367,3 +367,8 @@ a.active{
     filter: saturate(100%);
     background: no-repeat;
 }
+
+iframe {
+  /* Hide the controls */
+  pointer-events: none;
+}
